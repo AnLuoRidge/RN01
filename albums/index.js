@@ -2,19 +2,25 @@
 
 // Import a lib to help create a component
 import React from 'react';
-import ReactNative from 'react-native';
-
+// import ReactNative from 'react-native';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header.js';
 
 // Create a component
-const App = () => {
-  return (
-      <Text>Some Text </Text>
-  )
-};
+// Create a component
+const App = () => (
+    <Header />
+);
+
+// const App = () => {
+//   return (
+//       <Text>Some Text </Text>
+//   )
+// };
 
 
 // Render it to the device
-
+AppRegistry.registerComponent('albums', () => App);
 
 
 
