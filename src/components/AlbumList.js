@@ -1,7 +1,8 @@
 import React from 'react'
-import {View} from 'react-native'
+import { View } from 'react-native'
 import AlbumDetail from './AlbumDetail';
 import axios from 'axios'
+import CardSection from './CardSection'
 
 export default class AlbumList extends React.Component {
     state = {albums: []};
@@ -57,9 +58,9 @@ export default class AlbumList extends React.Component {
 
     render() {
         return (
-            <View>
+            <CardSection>
                 {this.renderAlbums()}
-            </View>
+            </CardSection>
         )
     }
 }
