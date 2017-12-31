@@ -3,7 +3,7 @@ import React from 'react'
 import { Text, View } from 'react-native'
 
 // Make a component
-const Header = (props) => { // dont use => ()
+const Header = (props) => {
 
     //const { title } = props
   const { textStyle, viewStyle } = styles // {} is a literal for creating objects. {x, y} is the destructing
