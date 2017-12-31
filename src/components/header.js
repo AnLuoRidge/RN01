@@ -5,12 +5,11 @@ import { Text, View } from 'react-native'
 // Make a component
 const Header = (props) => {
 
-    //const { title } = props
-  const { textStyle, viewStyle } = styles // {} is a literal for creating objects. {x, y} is the destructing
-  // var { foo:foo1, bar } = { foo: "lorem", bar: "ipsum" };
+  const { title } = props
+  const { textStyle, viewStyle } = styles
   return (/* JSX */
     <View style={viewStyle}>
-      <Text style={textStyle}>{props.title}</Text>
+      <Text style={textStyle}>{title}</Text>
     </View>
   )
 }
