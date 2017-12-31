@@ -34,7 +34,7 @@ const AlbumDetail = ({album}) => {
                 <View>
                     <Image
                         style={artworkStyle}
-                        source={{uri: '/Users/anluoridge/Pictures/Art/IMG_2386.JPG'}}
+                        source={{uri: artwork}}
                         //resizeMode="contain"
                     />
                 </View>
